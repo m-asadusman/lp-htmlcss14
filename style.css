@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid;
-    border-image: linear-gradient(to right, #bb1c1c, #b97926) 1;
+    border-image: linear-gradient(to right, #bb1c1c, #bb4e1c) 1;
 }
 
 .headerLeft{
@@ -37,7 +37,7 @@ body{
 }
 
 .logo span{
-    color: #bb1c1c;
+    color: #bb341c;
 }
 
 .mainNav ul{
@@ -92,6 +92,14 @@ body{
     background: rgba(255, 255, 255, 0.2);
 }
 
+.searchIcon i, .userIcon i{
+    transition: 0.2s;
+}
+
+.searchIcon i:hover, .userIcon i:hover{
+    color: #bb341c;
+}
+
 .gameLibrary{
     max-width: 1200px;
     margin: 60px auto;
@@ -135,6 +143,7 @@ body{
     width: 150px;
     height: 50px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .loadBtn{
@@ -145,14 +154,21 @@ body{
     border-radius: 50px;
     font-size: 14px;
     color: #fff;
-    background-color: #bb1c1c;
+    background:linear-gradient(to right, #bb1c1c, #bb4e1c);
     font-family: "Outfit";
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .loadBtn:hover{
-    background-color: #bb1c1cbb;
+    transform: scale(1.05);
+}
+
+footer{
+    background:linear-gradient(to right, #bb1c1c, #bb4e1c);
+    color:#fff;
+    padding:20px;
+    text-align:center;
 }
 
 @media (max-width: 1200px){
@@ -170,6 +186,12 @@ body{
 
     .options{
         display: block;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .options:hover{
+        color: #bb341c;
     }
 
     .downloadLink{
