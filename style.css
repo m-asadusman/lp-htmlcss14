@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+}
+
+.options{
+    display: none;
+}
+
+.mainHeader{
+    background-color: #000;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #bb1c1c, #b97926) 1;
+}
+
+.headerLeft{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo span{
+    color: #bb1c1c;
+}
+
+.mainNav ul{
+    list-style: none;
+    display: flex;
+}
+
+.mainNav li{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 15px;
+    line-height: 60px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mainNav li:hover{
+    opacity: 1;
+}
+
+.headerRight{
+    display: flex;
+    align-items: center;
+}
+
+.downloadLink{
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    padding-right: 15px;
+    opacity: 0.8;
+}
+
+.downloadLink:hover{
+    opacity: 1;
+}
+
+.searchIcon, .userIcon{
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.searchIcon{
+    background: rgba(255, 255, 255, 0.17);
+}
+
+.userIcon{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.gameLibrary{
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.gameGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.gameCard{
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gameCard:hover{
+    transform: translateY(-5px) scale(1.02);
+}
+
+.gamePoster{
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.gamePoster img{
+    width: 100%;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gameTitle{
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.loadBox{
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.loadBtn{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #bb1c1c;
+    font-family: "Outfit";
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loadBtn:hover{
+    background-color: #bb1c1cbb;
+}
+
+@media (max-width: 1200px){
+
+    .gameGrid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+
+    .mainNav{
+        display: none;
+    }
+
+    .options{
+        display: block;
+    }
+
+    .downloadLink{
+        font-size: 12px;
+    }
+
+    .gameLibrary{
+        margin: 40px auto;
+    }
+
+    .gameGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .loadBox{
+        width: 120px;
+        height: 40px;
+    }
+
+    .loadBtn{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px){
+    
+    .gameGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
