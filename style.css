@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid;
-    border-image: linear-gradient(to right, #bb1c1c, #bb4e1c) 1;
+    border-image: linear-gradient(to right, #bb1c1c, #b97926) 1;
 }
 
 .headerLeft{
@@ -37,7 +37,7 @@ body{
 }
 
 .logo span{
-    color: #bb341c;
+    color: #bb1c1c;
 }
 
 .mainNav ul{
@@ -97,7 +97,7 @@ body{
 }
 
 .searchIcon i:hover, .userIcon i:hover{
-    color: #bb341c;
+    color: #bb1c1c;
 }
 
 .gameLibrary{
@@ -154,18 +154,18 @@ body{
     border-radius: 50px;
     font-size: 14px;
     color: #fff;
-    background:linear-gradient(to right, #bb1c1c, #bb4e1c);
+    background-color: #bb1c1c;
     font-family: "Outfit";
     cursor: pointer;
     transition: 0.2s;
 }
 
 .loadBtn:hover{
-    transform: scale(1.05);
+    background-color: #bb1c1cbb;
 }
 
 footer{
-    background:linear-gradient(to right, #bb1c1c, #bb4e1c);
+    background-color: #202020;
     color:#fff;
     padding:20px;
     text-align:center;
@@ -191,7 +191,7 @@ footer{
     }
 
     .options:hover{
-        color: #bb341c;
+        color: #bb1c1c;
     }
 
     .downloadLink{
